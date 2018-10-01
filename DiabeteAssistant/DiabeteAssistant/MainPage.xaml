@@ -4,11 +4,12 @@
              xmlns:local="clr-namespace:DiabeteAssistant"
              x:Class="DiabeteAssistant.MainPage">
 
-    <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
-    </StackLayout>
+    <ScrollView x:Name="ScrollViewBaseID"  Orientation="Vertical"  VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand" >
+
+        <StackLayout x:Name="StackMainID" Spacing="2"  Orientation="Vertical" >
+
+        </StackLayout>
+
+    </ScrollView>
 
 </ContentPage>

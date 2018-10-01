@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Globalization;
+using System.Threading;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -12,6 +14,9 @@ namespace DiabeteAssistant
             InitializeComponent();
 
             MainPage = new MainPage();
+            MainPage = new NavigationPage(new DiabeteAssistant.MainPage());
+            Thread.CurrentThread.CurrentCulture = new CultureInfo("fr-FR");
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo("fr-FR");
         }
 
         protected override void OnStart()
